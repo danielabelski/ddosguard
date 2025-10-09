@@ -28,8 +28,7 @@ services:
             # protection is disabled for the following web sites
             # - ./nginx/protection_disabled:/etc/nginx/protection_disabled
             
-            # uncomment if you want to change source code
-            #- ./lua/ddosguard:/usr/local/openresty/lualib/ddosguard
+            - ./lua/ddosguard:/usr/local/openresty/lualib/ddosguard
         ports:
             - "80:80"
 
